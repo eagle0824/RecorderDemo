@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="IDLE"
+        android:id="@+id/display_state"/>
+
+    <com.eagle.recorderdemo.VUMeter
+        android:id="@+id/uvMeter"
+        android:layout_width="150px"
+        android:layout_height="60px"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:id="@+id/start"
+            android:text="START"
+            android:onClick="onViewClick"/>
+
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="80dp"
+            android:text="STOP"
+            android:id="@+id/stop"
+            android:onClick="onViewClick"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
